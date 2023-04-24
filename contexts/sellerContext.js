@@ -1,4 +1,4 @@
-const { createContext, useState } = require("react");
+const { createContext, useReducer } = require("react");
 
 export const SellerContext = createContext(); //step 1
 export const UpdateContext = createContext(); //step 5-ish
@@ -11,6 +11,27 @@ export const UpdateContext = createContext(); //step 5-ish
 }; */
 
 const infoGlobal = 42;
+import { useReducer } from "react";
+
+const initialState = {
+  value: 0,
+};
+// const reducer = (state, action) => {
+function reducer(state, action) {
+  console.log(action);
+  /*  switch (action.type) {
+    case "INCREASE":
+      return {
+        value: state.value + 1,
+      };
+    case "DECREASE":
+      return {
+        value: state.value - 1,
+      };
+    default:
+      return state; 
+  }*/
+}
 
 /* export const SellerProvider = ({ children }) => { */
 export const SellerProvider = ({ children }) => {
