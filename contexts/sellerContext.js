@@ -37,7 +37,7 @@ function reducer(state, action) {
     default:
       return state; 
   }*/
-  console.log(action);
+  //   console.log(action);
   if (action.action === "LOGIN") {
     // return { ...state, name: "Jonas" };
     return { ...state, name: action.payload };
