@@ -18,6 +18,12 @@ export default function Home() {
 
       <main className={`${styles.main} ${inter.className}`}>
         <Test />
+        <Test />
+        <Test />
+        <Test />
+        <Test />
+        <Test />
+        <Test />
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
